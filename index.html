@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeepDrive</title>
+
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  
+  <!-- FontAwesome 최신 CDN 추가 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <style>
+    .hero-body {
+    padding-top: 8rem; /* 기존보다 공백을 늘림 */
+    }
+    .body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .deep-daiv {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #264a8e;
+      text-decoration: none;
+      font-size: 1.25rem;
+    }
+    .deep-daiv-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+    .deep-daiv-container span,
+    .deep-daiv-container a {
+      display: flex;
+      align-items: center;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      font-size: 1.125rem;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .button.is-dark {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+    }
+    .button.is-light {
+      background-color: white;
+      color: black;
+      border: 1px solid #ccc;
+    }
+    .button .icon {
+      margin-right: 8px;
+    }
+    .content {
+    font-size: 1.2rem; /* 기본보다 크기 증가 */
+    line-height: 1.6; /* 줄 간격 키워서 가독성 개선 */
+  }
+  /* 리스트(ul) 크기 키우기 */
+  .content ul {
+  font-size: 1.15rem;
+  }
+  .image-caption {
+    font-size: 1.2rem; /* 글자 크기 증가 */
+    font-weight: 500; /* 가독성을 위한 적절한 두께 */
+    text-align: center; /* 가운데 정렬 */
+    margin-top: 10px; /* 이미지와의 간격 조정 */
+  }
+ 
+
+
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">"Improving Quality of Indoor 3D Reconstruction"</h1>
+          
+          <!-- 연구진 정보 -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="#">Chehun Han</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Jungeon Kim</a><sup>2†</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Ewha Womans University,</span>
+            <span class="author-block"><sup>2</sup>POSTECH</span>
+          </div>
+
+          <!-- 프로젝트 팀 & 리더 -->
+          <div class="column has-text-centered deep-daiv-container">
+            <span>†Project Lead</span>
+          </div>
+
+          <!-- 버튼 추가 -->
+          <div class="button-container">
+            <a href="https://github.com/cheoniii/Drive" class="button is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+            <a href="https://lacy-tick-ae2.notion.site/18eb0c1a844f8013a6ebce024bf58c0b?pvs=4" class="button is-light">
+              <span class="icon">
+                <i class="fas fa-file"></i>
+              </span>
+              <span>Project Detail</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <!-- 제목 추가 -->
+    <h2 class="title is-3">Autonomous Driving ?</h2>
+
+    <!-- 영상 추가 -->
+    <div class="video-container">
+      <video controls width="80%">
+        <source src="./static/videos/tesla.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- 캡션 추가 -->
+    <p class="is-size-6 has-text-grey mt-3">CVPR Workshop on Autonomous Driving 2023 – Tesla</p>
+
+    <!-- 설명 추가 (위쪽 간격 늘림) -->
+    <p class="is-size-5 has-text-justified mt-6">
+      Tesla에서는 이렇게 3차원 occupancy map을 만들어서 굴곡이나 객체 등을 인지하여 🚘자율주행을 하고 있습니다.
+      따라서, 그 축소판으로 프로젝트를 진행해봤습니다. - ⭐
+    </p>
+  </div>
+</section>
